@@ -3,4 +3,4 @@ project(ClassPair)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ClassPair vektor.cpp)
+add_executable(ClassPair pairTest.cpp)

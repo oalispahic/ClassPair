@@ -49,8 +49,8 @@ cmake_ninja_workdir = /Users/omaralispahic/Documents/projekti/PairLibrary/cmake-
 
 build cmake_object_order_depends_target_ClassPair: phony || CMakeFiles/ClassPair.dir
 
-build CMakeFiles/ClassPair.dir/vektor.cpp.o: CXX_COMPILER__ClassPair_unscanned_Debug /Users/omaralispahic/Documents/projekti/PairLibrary/vektor.cpp || cmake_object_order_depends_target_ClassPair
-  DEP_FILE = CMakeFiles/ClassPair.dir/vektor.cpp.o.d
+build CMakeFiles/ClassPair.dir/pairTest.cpp.o: CXX_COMPILER__ClassPair_unscanned_Debug /Users/omaralispahic/Documents/projekti/PairLibrary/pairTest.cpp || cmake_object_order_depends_target_ClassPair
+  DEP_FILE = CMakeFiles/ClassPair.dir/pairTest.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/ClassPair.dir
   OBJECT_FILE_DIR = CMakeFiles/ClassPair.dir
@@ -63,7 +63,7 @@ build CMakeFiles/ClassPair.dir/vektor.cpp.o: CXX_COMPILER__ClassPair_unscanned_D
 #############################################
 # Link the executable ClassPair
 
-build ClassPair: CXX_EXECUTABLE_LINKER__ClassPair_Debug CMakeFiles/ClassPair.dir/vektor.cpp.o
+build ClassPair: CXX_EXECUTABLE_LINKER__ClassPair_Debug CMakeFiles/ClassPair.dir/pairTest.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
   OBJECT_DIR = CMakeFiles/ClassPair.dir
   POST_BUILD = :
