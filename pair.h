@@ -1,6 +1,7 @@
-//
+//*******************************************
 // Created by Omar Alispahic on 28. 5. 2025..
-//
+//              ~ClassPair~
+//*******************************************
 
 #ifndef VECTOR_PAIR_H
 #define VECTOR_PAIR_H
@@ -14,7 +15,7 @@ private:
     type_one first;
     type_two second;
 public:
-    pair(type_one first, type_two second) {
+   pair(type_one first, type_two second) {
         this->first = first;
         this->second = second;
     }
@@ -23,12 +24,12 @@ public:
     friend std::ostream &operator<<(std::ostream &stream, const pair<T1, T2> &output);
 
 
-    auto component(int comp=0) {
-        if(comp == 0) return first;
+    auto &component() {
+        return first;
     }
 
-    auto component(float comp) {
-        if (comp < 0 || comp > 1) throw std::logic_error("Component index must be 0 or 1");
+    auto &component(int comp) {
+        if (comp < 0 || comp > 1) throw std::logic_error("Component index must be '1' or empty" );
         if (comp == 1) return second;
     }
 
@@ -38,6 +39,11 @@ public:
     }
     void modify(type_two newValue, float position) {
         if (position == 1) this->second = newValue;
+    }
+
+
+    pair<type_two,type_one> flip(){
+        return pair<type_two,type_one>(second,first);
     }
 
 };
