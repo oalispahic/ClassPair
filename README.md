@@ -17,6 +17,7 @@ Features:
 
 -Cool methods not originally found in std::pair
 
+
 Overview: 
 
 Working on the library to expand it with a lot of methods which are not a 
@@ -37,6 +38,7 @@ explicitly in the declaration like tuple or pair.
 
 To acces the components you can use the "component" method which can be called
 on a "pair" object.
+
 
 Work in progress:
 
