@@ -10,8 +10,11 @@ a clean, fun and flexible take on the pair data structure.
 Features:
 
 -Simple readable syntax
+
 -No need to specify types explicitly 
+
 -More user friendly 
+
 -Cool methods not originally found in std::pair
 
 Overview: 
@@ -38,8 +41,11 @@ on a "pair" object.
 Work in progress:
 
 -Indexing and being able to use [] like an alternative to .component()
+
 -Support for iteration and linking multiple pairs with a "SuperArray"
+
 -Safe .at() method like in std::vector
+
 -Fun extras and exotic fratures
 
 
