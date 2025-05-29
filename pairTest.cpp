@@ -22,8 +22,13 @@ int main() {
     NR();
     combinedPair.component() = "Trying this "; //you can change the values of the components too
     std::cout<<combinedPair.component();
-    auto flipped = combinedPair.flip(); // can flip the values but returns a new object
+    auto flipped = combinedPair.flip(); //can flip the values but returns a new object
     std::cout<<flipped;
+    pair par1(1,2);
+    pair par2(1,3);
+    NR();
+    std::cout<<std::boolalpha<<(par1==par2); //overloaded the "==" operator
+
 
 
     return 0;
